@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./componet/Navbar";
-import Textform from "./componet/Textform";
+// import Navbar from "./componet/Navbar";
+// import Textform from "./componet/Textform";
 // import * as React from "react";
 import Accordion from "./componet/Accordion";
 // import * as ReactDOM from "react-dom";
