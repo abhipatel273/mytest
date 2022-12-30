@@ -5,6 +5,7 @@ import "./App.css";
 // import * as React from "react";
 import Accordion from "./componet/Accordion";
 // import * as ReactDOM from "react-dom";
+// import Index from "./test";
 
 // import {
 //   createBrowserRouter,
