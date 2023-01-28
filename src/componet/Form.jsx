@@ -39,7 +39,6 @@ export default function Form() {
         });
 
     };
-    // abhi
 
     const handelsub = (e) => {
         e.preventDefault();
