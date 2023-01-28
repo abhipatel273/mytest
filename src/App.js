@@ -1,42 +1,31 @@
 // import logo from "./logo.svg";
 import "./App.css";
-// import Navbar from "./componet/Navbar";
-// import Textform from "./componet/Textform";
-// import * as React from "react";
-import Accordion from "./componet/Accordion";
-// import * as ReactDOM from "react-dom";
-// import Index from "./test";
-
-// import {
-//   createBrowserRouter,
-//   createRoutesFromElements,
-//   Route,
-//   RouterProvider,
-// } from "react-router-dom";
-
-// const router = createBrowserRouter(
-//   createRoutesFromElements([
-//     <Route path="/" element={<Accordion />}></Route>,
-//     <Route path="/acc" element={<Navbar />}></Route>,
-//     <Route path="/acc/arr" element={<Textform />}></Route>,
-//   ])
-// );
+// import Form from "./componet/Form";
+// import Createnote from "./Createnote";
+// import Card from "./componet/card";
+// import Temprature from "./weather/Temp";
+// import Todo from "./componet/Todo";
+// import UseHook from "./Hooks/UseHook";
+// import Restaurant from "./componet/Restaurant";
+// import data from "./componet/carddata";
+import Covid19 from "./componet/Covid19";
+import Navbar from "./componet/Navbar"
 
 function App() {
-  return(
-  // return ReactDOM.createRoot(document.getElementById("root")).render(
-  //   <React.StrictMode>
-  //     <RouterProvider router={router} />
-  //   </React.StrictMode>
-  // );
-  <>
-    <div className="container">
-      {/* <Textform /> */}
-      <Accordion />
-      {/* <Navbar /> */}
-    </div>
-  </>
-  )
+
+  return (
+    <>
+      {/* <Restaurant/> */}
+      {/* < UseHook/> */}
+      {/* < Todo /> */}
+      {/* <Temprature /> */}
+      {/* < Card menu={data}/> */}
+      {/* <Form/> */}
+      {/* < Createnote /> */}
+      <Navbar />
+      <Covid19 />
+    </>
+  );
 }
 
 export default App;

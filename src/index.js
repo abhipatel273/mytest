@@ -1,24 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import Abhi123 from './Abhi';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import Form from "./componet/Form";
+import Createnote from "./componet/Createnote";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter(
+  
+  createRoutesFromElements([
+    <Route path="/" element={<App />}></Route>,
+    <Route path="/Form" element={<Form />}></Route>,
+    <Route path="/Createnote" element={<Createnote />}></Route>,
+  ])
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-const abhi = ReactDOM.createRoot(document.getElementById('abhi'));
-abhi.render(
-  <React.StrictMode>
-    <Abhi123 />
+    {<RouterProvider router={router} />}
+    {/* <App/> */}
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
