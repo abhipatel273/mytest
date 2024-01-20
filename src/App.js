@@ -9,12 +9,23 @@ import "./App.css";
 // import Restaurant from "./componet/Restaurant";
 // import data from "./componet/carddata";
 import Covid19 from "./componet/Covid19";
-import Navbar from "./componet/Navbar"
+import Navbar from "./componet/Navbar";
+import Form from "./componet/Form";
+import Createnote from "./componet/Createnote"
+import { BrowserRouter, Routes , Route} from "react-router-dom";
 
 function App() {
 
   return (
     <>
+    <BrowserRouter>
+    <Navbar />
+      <Routes>
+        <Route path="/" element={<Covid19  />}></Route>
+        <Route path="/Form" element={<Form />}></Route>
+        <Route path="/Createnote" element={<Createnote />}></Route>
+      </Routes>
+    </BrowserRouter>
       {/* <Restaurant/> */}
       {/* < UseHook/> */}
       {/* < Todo /> */}
@@ -22,8 +33,7 @@ function App() {
       {/* < Card menu={data}/> */}
       {/* <Form/> */}
       {/* < Createnote /> */}
-      <Navbar />
-      <Covid19 />
+      {/* <Covid19 /> */}
     </>
   );
 }

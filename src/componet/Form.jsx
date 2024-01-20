@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
+import Button from '@mui/material/Button'
+import SaveIcon from '@mui/icons-material/Save';
 
 export default function Form() {
-
 
     const [curval, setCurVal] = useState({
         username: "",
@@ -21,23 +22,7 @@ export default function Form() {
                 ...prval,
                 [name]: val,
             }
-
-            //     if (fnmae === "username") {
-            //         return {
-            //             username: val,
-            //             password: prval.password,
-            //         };
-            //     } else if (fnmae === "password") {
-            //         return {
-            //             username: prval.val,
-            //             password: val,
-            //         }
-            //     }
-            //     else {
-            //         alert("value not same")
-            //     }
         });
-
     };
 
     const handelsub = (e) => {
@@ -70,7 +55,10 @@ export default function Form() {
                                 </div>
                             </div>
                         </fieldset>
-                        <button type="submit" className='submit-btn'>submit 👍</button>
+                        <Button type="submit" className='submit-btn'>
+                            submit
+                            <SaveIcon/>
+                        </Button>
                     </form>
                 </div>
             </div>
